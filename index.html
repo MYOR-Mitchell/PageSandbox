@@ -1,63 +1,85 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Language of the document -->
+<html lang="en">
 
 <head>
-    <title>GoMYOR</title> <!-- Title of the document -->
+    <!-- Character encoding and viewport settings for mobile responsiveness -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tags for description, keywords, and author -->
     <meta name="description" content="Home page to something...Just don't know what yet!">
-
+    <!-- Page title -->
+    <title>GoMYOR</title>
+    <!-- Link to external CSS -->
     <link rel="stylesheet" href="myor/css/main.css">
-    <!-- Font Awesome CSS -->
+    <!-- Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <!-- Favicon -->
+    <!-- Favicon links -->
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="192x192" href="/favicon/android-chrome-192x192.png">
-
 </head>
-
 <body>
+    <!-- Header Section -->
     <header>
-        <nav class="header-nav">
-            <ul class="nav-links">
-                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <!-- Navigation bar with links to sections -->
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
                 <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
+    <!-- Main Content Section -->
     <main>
-        <section id="home" class="hero-photo">
-            <img src="images/this-guy.jpg" alt="The Guy">
-            <blockquote>"Your road, your reality"</blockquote>
-        </section>
         <section id="about">
-            <div class="funny-color">
-                <h3>Cosmic Assassin</h3>
-                <p>Intergalactic fugitive on a mission to expose the universe&apos;s greatest op—Oprah.</p>
+            <div class="highlight-box">
+                <!-- Display a heading -->
+                <h3>Riding Good Vibes into the Tech Universe</h3>
+                <!-- About Section -->
+                <section id="introduction">
+                    <p>
+                        I'm just a chill guy, trying to ride the cosmic <br>
+                        wave of good vibes into my own reality.<br><br>
+                        Somewhere between binge-watching One Piece and trying to <br>
+                        convince my cats that I'm in charge (spoiler: I'm not), <br>
+                        I discovered my passion for coding. <br><br>
+                        Now I'm gearing up to crash-land into the tech industry <br>
+                        as an aspiring developer!<br>
+                        I really look forward to creating some cool stuff and <br>
+                        meeting some like-minded people.<br><br>
+                        Until then, I'm just cruising through, feeding off positive energy, <br>
+                        learning, and having a good time.<br><br>
+                    </p>
+                </section>
             </div>
         </section>
     </main>
+    <!-- Footer Section -->
     <footer id="contact">
-        <!-- Footer Left Section of Footer -->
-        <div class="footer-left">
-            <p class="name">Martin Mitchell</p>
-            <p>Email: <a href="mailto:contact@gomyor.com">contact@gomyor.com</a></p>
+        <!-- Contact Information -->
+        <div class="footer-section contact-info">
+            <div class="contact-name">First Last</div>
+            <p>Email: <a href="mailto:contact@gomyor.com">contact@email.com</a></p>
             <p>Phone: <a href="tel:+1234567890">+1-234-567-8910</a></p>
-            <!-- Social Media Links -->
+            <!-- Social media links -->
             <div class="social-icons">
-                <a href="https://www.facebook.com/martin.mitchell.165" target="_blank"><i
-                        class="fab fa-facebook"></i></a>
-                <a href="https://discord.gg/uMNTyGjttW" target="_blank"><i class="fab fa-discord"></i></a>
-                <a href="https://github.com/MYOR-Mitchell" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-discord"></i>Discord</a>
+                <a href="#" target="_blank"><i class="fab fa-github"></i>Github</a>
             </div>
         </div>
-        <div class="footer-center">
-            <img src="images/the-cats-logo.jpg" alt="Logo Image">
+        <!-- Flip Image Section -->
+        <div class="flip-container footer-flip">
+            <div class="circle">
+                <img src="images/this-guy.jpg" alt="Avatar" class="front">
+                <img src="images/the-cats-logo.jpg" alt="Cats Logo" class="back">
+            </div>
+            <p class="flip-text">"Your road, your reality"</p>
         </div>
-        <div class="footer-right">
+        <!-- Contact Form -->
+        <div class="footer-section contact-form">
             <form id="contact-form" action="your-backend-url" method="POST">
+                <!-- Row for Name and Email Inputs -->
                 <div class="form-row">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -68,20 +90,24 @@
                         <input type="email" id="email" name="email" required placeholder="Enter your email...">
                     </div>
                 </div>
+                <!-- Subject Input -->
                 <div class="form-group">
-                    <label for="topic">Subject</label>
-                    <input type="text" id="topic" name="topic" placeholder="Enter the subject...">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter the subject...">
                 </div>
+                <!-- Message Input -->
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <div style="display: flex; align-items: flex-start; gap: 10px;">
+                    <div class="textarea-container">
                         <textarea id="message" name="message" required placeholder="Write your message..."></textarea>
+                        <!-- Submit Button -->
                         <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
                     </div>
                 </div>
             </form>
         </div>
     </footer>
+    <!-- Link to external JavaScript -->
+    <script src="myor/js/main.js"></script>
 </body>
-
 </html>
