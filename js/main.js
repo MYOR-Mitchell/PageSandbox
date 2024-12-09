@@ -12,4 +12,3 @@ document.addEventListener('DOMContentLoaded', () => {
         flipText.textContent = circle.classList.contains('flip') ? backText : frontText; // Update text
     });
 });
-
