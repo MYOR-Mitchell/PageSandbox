@@ -1,4 +1,5 @@
 
+
 //Scroll function for buttons
 const homeButton = document.querySelector('.oval-home');
 const aboutButton = document.querySelector('.oval-about');
